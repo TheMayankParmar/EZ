@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExpenseZero – Privacy Policy</title>
+  <style>
+    body{font-family:system-ui, -apple-system, sans-serif;max-width:800px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}
+    h1,h2,h3{color:#000}
+    code{background:#f4f4f4;padding:2px 4px;border-radius:4px}
+  </style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p>Last updated: 26 June 2025</p>
+<p>
+  Welcome to <strong>ExpenseZero</strong> (the "App"), operated by ExpenseZero Labs ("we", "us", or "our").
+  This Privacy Policy explains how we collect, use, and safeguard your information when you use the App.
+</p>
+
+<h2>1. Data We Collect</h2>
+<ul>
+  <li><strong>Local Transaction Data.</strong> Expenses you enter (amount, date, category, notes, images) are stored <em>locally</em> on your device in an encrypted SQLite database (Drift + SQLCipher).</li>
+  <li><strong>Optional Cloud Backup.</strong> If you sign in with your e-mail (magic-link), transactions are synced to our Supabase backend. The backend stores a user ID, e-mail (for authentication), and your expense rows.</li>
+  <li><strong>Voice Input.</strong> When you opt-in to voice capture the audio is processed on-device only. We do <em>not</em> upload raw audio.</li>
+  <li><strong>Analytics.</strong> We collect anonymous event metrics (screen opens, feature usage) via Google Analytics for Firebase <em>without</em> advertising ID.</li>
+</ul>
+
+<h2>2. How We Use Your Data</h2>
+<ul>
+  <li>Provide core features: budgeting, analytics, AI chat parsing of receipts.</li>
+  <li>Synchronise data across your devices when you are signed in.</li>
+  <li>Diagnose crashes and improve stability (aggregated crash logs via Firebase Crashlytics).</li>
+</ul>
+
+<h2>3. Data Sharing</h2>
+<p>We do <strong>not</strong> sell or share your personal data with third parties for advertising or marketing. Data is shared only with service providers strictly necessary to operate the App:</p>
+<table>
+<tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr>
+<tr><td>Supabase Inc.</td><td>Database, authentication, file storage</td><td>User ID, e-mail, encrypted expense rows</td></tr>
+<tr><td>OpenAI LLC</td><td>Natural-language parsing (only if Pro tier enabled)</td><td>Selected text prompt <em>without</em> personal identifiers</td></tr>
+<tr><td>Google (Firebase)</td><td>Analytics & Crash reporting</td><td>Anonymous event data and crash stack traces</td></tr>
+</table>
+
+<h2>4. Security</h2>
+<ul>
+  <li>Local database encrypted with 256-bit SQLCipher key stored in <code>Android Keystore</code>/<code>Keychain</code>.</li>
+  <li>All network traffic is TLS 1.2+.</li>
+  <li>Supabase tables protected by Row Level Security; only your JWT can access your rows.</li>
+</ul>
+
+<h2>5. Your Choices & Rights</h2>
+<ul>
+  <li><strong>Offline Mode.</strong> You can use the App without creating an account; nothing leaves your device.</li>
+  <li><strong>Export & Delete.</strong> Settings → Export lets you save a CSV/PDF.  Delete Account wipes cloud data and local cache.</li>
+  <li><strong>Revoke Consent.</strong> You may sign out at any time to stop sync.</li>
+</ul>
+
+<h2>6. Children's Privacy</h2>
+<p>The App is not directed to children under 13. We do not knowingly collect personal data from children.</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>We may update this Privacy Policy. We will notify you via in-app banner or store listing update.</p>
+
+<h2>8. Contact Us</h2>
+<p>If you have questions, email us at <a href="mailto:privacy@expensezero.com">privacy@expensezero.com</a>.</p>
+
+</body>
+</html> 
